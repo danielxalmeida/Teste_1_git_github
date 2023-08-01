@@ -1,0 +1,159 @@
+/* TPC 4: Daniel Almeida - 17/04/2023 */
+/* Geral */
+body {
+    background-color: rgb(40, 40, 40);
+    color: white;
+    text-align: center;
+    overflow: auto;
+}
+
+h1 {
+    font-family: 'Courier New';
+}
+
+p {
+    font-family: 'Gill Sans';
+}
+
+.prim {
+    background-color: grey;
+    max-width: 1000px;
+    padding: 10px;
+    border: 2px solid white;
+}
+
+.prim button {
+    font-family: 'Arial';
+    font-weight: bolder;
+    color: white;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+/* Duração das transições, para editar facilmente: */
+.prim>button,
+.prim>p>span,
+.prim>img,
+.second>h2 {
+    transition-duration: 1s;
+}
+
+.prim button:hover {
+    padding: 15px 25px;
+    border: 3px solid white;
+    background-color: black;
+}
+
+.prim span {
+    background-color: greenyellow;
+    border: 1px solid red;
+    border-radius: 15px;
+    font-size: 16px;
+    color: red;
+    padding: 1px 10px;
+    cursor: pointer;
+}
+
+.prim span:hover {
+    font-size: 18px;
+}
+
+.prim img {
+    width: 30%;
+    height: 210px;
+    cursor: grab;
+    /* para que a transição ao sair do hover também seja visivel: */
+    border: 0px solid red;
+}
+
+.prim img:hover {
+    border-radius: 10px;
+    border: 3px solid red;
+}
+
+.second {
+    max-width: 400px;
+    height: 250px;
+    background-image: url("praia.algarve.jpg");
+    background-size: 100% 250px;
+    cursor: pointer;
+}
+
+.prim, .second {
+    width: 80%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.second h2 {
+    color: rgba(255, 0, 0, 0);
+    font-size: 30px;
+}
+
+.second:hover h2 {
+    color: rgba(255, 0, 0, 1);
+}
+
+/* medias: */
+/* 450px to 650px */
+@media all and (max-width:650px) {
+    body {
+        background-color: darkred;
+    }
+
+    .prim {
+        background-color: rgba(241, 69, 184, 0.351);
+    }
+
+    .prim img {
+        width: 45%;
+        height: 180px;
+    }
+
+    .prim span, p {
+        font-size: 18px;
+    }
+
+    .prim span {
+        background-color: blue;
+        color: yellow;
+        border-color: yellow;
+    }
+
+}
+
+/* under 450px */
+@media all and (max-width: 450px) {
+    body {
+        background-color: darkgreen;
+    }
+
+    .prim {
+        background-color: rgba(18, 188, 52, 0.615);
+    }
+
+    .prim img {
+        width: 100%;
+        height: auto;
+    }
+
+    .prim span,
+    p {
+        font-size: 20px;
+    }
+
+    .prim span {
+        background-color: blue;
+        color: yellow;
+        border-radius: 0;
+    }
+
+    .prim span:hover {
+        font-size: 16px;
+    }
+
+}

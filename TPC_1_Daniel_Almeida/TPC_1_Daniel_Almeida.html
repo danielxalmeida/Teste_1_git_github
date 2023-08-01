@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="PT"> 
+<head>
+    <title>Trabalho de Casa 1 - Daniel Almeida</title>
+    <meta charset="utf-8">
+</head>
+<body>
+    <h1>Perguntas sobre HTML</h1>
+    <h2>Daniel Almeida</h2>
+    <br><hr><br>
+    <h3>1 - O que é o HTML e para que serve?</h3>
+    <p style="border: 3px solid black;background-color: lightgrey; width: fit-content;">
+        H --» Hyper <br>
+        T --» Text <br>
+        M --» Markup <br>
+        L --» Language <br>
+        <br>
+        O HTML é uma linguagem de marcação que descreve a estrutura de uma página web e a principal linguagem de criação de páginas web. <br>
+        É um conjunto de instruções (tags, elementos, referências) que indicam ao browser como apresentar e estruturar os conteúdos. <br>
+        O conteúdo é composto por elementos (ou tags). Variam desde titulos, paragrafos, imagens, links, tabelas, botões...  <br>
+        Cada elemento pode ser personalizado individualmente, sob a forma de atributos, de forma a ser apresentado como pretendido (cor, letra, fundo, tamanho, formatação...). 
+
+    </p>
+    <hr>
+    <h3>2 - Quais ferramentas são necessárias para construir um site em HTML?</h3>
+    <p style="border: 3px solid black;background-color: lightgrey; width: fit-content;">
+        Para construír um site HTML, basta um simples editor de texto, tipo Wordpad ou Notepad. <br>
+        Para visualizar o resultado, é ainda necessario um Browser. <br>
+        No entanto, para facilitar a escrita e a edição, podem ser utilizados outros softwares, especialmente para Web ou para código. <br>
+        De momento, o VScode é uma ajuda, pois lista alguns elementos e atributos aquando se inicia a sua digitação, ou preenche automaticamente o início e o fim de cada elemento. <br>
+    </p>
+    <hr>
+    <h3>3 - Quais os elementos base necessários para a criação de uma página web em HTML?</h3>
+    <p>
+        São 4 os elementos base necessários para a criação de uma pagina HTML: <br>
+    <ol style="border: 3px solid black;background-color: lightgrey; width: fit-content;">
+        <li>&lt;Doctype html&gt;</li>
+        Define o tipo de documento e indica ao browser o tipo de página e a linguagem utilizada.
+        <li>&lt;html&gt;&lt;/&gt;</li> 
+        Definição da linguagem e delimita todo o conteúdo, visível ou não, de uma página.
+        Dentro do HTML podemos ter mais dois elementos base: &lt;head&gt;&lt;/&gt; e &lt;body&gt;&lt;/&gt;
+        <li>&lt;head&gt;&lt;/&gt;</li>
+        O campo "head" agrupa, essencialmente, os metadados necessários para a página e para os navegadores e motores de busca.
+        Podem ser inseridos títulos (nome da página), tipo de alfabeto (utf-8), palavras-chave para pesquisa, descrições do site, do conteúdo... 
+        Os metadados aqui inseridos, não serão visíveis no corpo da página. 
+        <li>&lt;body&gt;&lt;/&gt;</li>
+        Conteúdo visível da página.
+        É composto por vários elementos/Tags e respectivos atributos, de forma a formatar e personalizar toda a informação a apresentar.
+        Pode variar entre texto, imagens, links e muito outro conteúdo.
+        </ol>
+    </p>
+    <hr>
+    <h3>4 - O que é um elemento? Dê exemplos.</h3>
+    <p style="background-color: aliceblue; width: fit-content;">
+        Os elementos são a base da construção do HTML. Cada elemento representa uma parte do conteúdo. <br>
+        São responsáveis por todas as partes (Visíveis e invisíveis) de um página HTML. <br>
+        Um elemento composto é composto por 3 partes: <br><br>
+        <img src="https://developer.mozilla.org/pt-BR/docs/Learn/Getting_started_with_the_web/HTML_basics/gato-rabujento-pequeno.png" alt="Elemento" width="300" style="text-align: center;">
+    
+        <ol style="border: 3px solid black;background-color: lightgrey; width: fit-content;">    
+            <li>Tag de abertura</li>
+            Os elementos iniciam-se com "&lt; _Instrução_ &gt;". <br>
+            A <ins><i>instrução</i></ins> define o elemento. <br>
+            Após a instrução, podem ainda ser adicionados atributos: <br>
+            "&lt; _Instrução_ _Atributos_&gt;" <br>
+            Os atributos (um ou mais) são adicionados depois da instrução e podem variar de cor, tamanho, posição... <br>
+            Em suma, definem a apresentação/formatação do elemento. <br><br>
+            <li>Conteúdo</li>
+            Esta á a parte visivel do elemento e a parte a ser formatada pelos atributos. <br><br>
+            <li>Tag de fechamento</li>
+            Delimita o fim do elemento, bem como da formatação e atributos definidos. <br>
+            É representada apenas por "&lt;/ _Instrução_ &gt;" <br><br>
+        </ol>
+        Existem, também, tags sem fechamento, que  vamos explorar na questão seguinte.
+    </p>
+    <h5>Exemplos de tags compostas:</h5>
+    <p style="border: 3px solid black; width: 175px;background-color: lightsalmon; width: fit-content;">
+        &lt;p&gt;Tag de parágrafo&lt;/p&gt;
+    </p>
+    <pre style="background-color: antiquewhite; width:fit-content">
+A tag &lt;p&gt;&lt;/p&gt; é um exemplo do que é e de como funcionam os elementos. 
+Tag de abertura: <b>&lt;p&gt;</b>
+Conteúdo: <b>Todo o conteúdo que queremos apresentar;</b>
+Tag de fecho: <b>&lt;/p&gt;</b>
+
+Em HTML:
+&lt;p&gt;
+    Conteúdo, incluindo imagens, links, videos...
+&lt;/p&gt;
+    </pre>
+    <hr>
+
+    <h3>5 - O elemento &lt; br &gt; necessita ser fechado? Justifique.</h3>
+
+    <p style="border: 3px solid black;background-color: lightgrey; width: fit-content;">
+        &lt;br&gt;, tal como &lt;hr&gt; ou &lt;img&gt;, são elementos vazios, que não têm fecho. <br>
+        São chamadas de elementos vazios, pois não contêm nenhum conteúdo. <br>
+        No entanto, há elementos vazios que podem conter atributos, como por exemplo a tag &lt;img&gt;. <br><br>
+
+        Os elementos vazios têm uma função específica pré definida, e como tal, não permitem conteúdo nem precisam de ser fechados, pois a sua função é única e aplicada no momento. <br>
+
+        Por exemplo, o elemento &lt;br&gt; introduz uma quebra de página. <br>
+        Não permite conteúdo e, como tal, não necessita de ser fechado (por ser um elemento vazio, por ter uma função pre-definida e por não permitir conteúdo). <br><br>
+
+        O elemento &lt;img&gt;, sendo um elemento vazio, vai necessitar de ter atributos, tais como: <br><br>
+        --» caminho para a imagem src="xxxx.xxx"; <br>
+        --» texto alternativo alt="xxx"; <br>
+        --» definição do tamanho a apresentar (width/height). <br><br>
+    </p>
+    <hr>
+    <h3>6 - Para que servem os atributos? Dê exemplos.</h3>
+    <pre style="background-color: lightslategrey; width:fit-content">
+Os atributos servem para fornecer informação adicional sobre o elemento.
+São eles que determinam a forma como o browser vai exibir os elementos.
+Podem ser de diferentes  funções, tais como:
+        <ol style="border: 3px solid black;width: 400px;background-color: lightgrey;">
+    <ul>estilo --» style=""
+        <ul>background-color: rgb(x,x,x)</ul><ul>color: rgb(x,x,x)</ul><ul>entre outros</ul></ul>
+    <ul>referência --» href ou scr
+        <ul>Definem o caminho para o link ou imagem.</ul></ul>
+        <ul>ou de informação
+        <ul>alt ou title</ul>
+    </ul></ol>
+Exemplo:
+    </pre>
+    <p style="background-color: rgb(200,100,50);border: 10px double green; font-size: large; width: 450px;height: 200px;text-align: center;">
+        Este paragrafo é composto por: <br><br>
+        &lt;p <br>
+        style=" background-color: rgb(200,100,50); <br>
+        border: 10px double green; <br>
+        font-size: large;<br>
+        width: 450px;<br>
+        height: 200px;<br>
+        text-align: center;"&gt;<br>
+    </p>
+    <hr>
+
+</body>
+
+</html>

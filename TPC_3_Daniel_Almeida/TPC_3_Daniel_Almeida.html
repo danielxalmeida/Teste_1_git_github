@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TPC 3: Daniel Almeida</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+
+        .divbody {
+            background-color: aqua;
+            margin: 0;
+            width: 1920px;
+            height: 1080px;
+            /* monitor de 1920*1080. ajuste de altura com o rodapé para full-screen ou janela de browser */
+        }
+
+        #sol {
+            height: 220px;
+        }
+
+        .nuvem>marquee>img {
+            margin-left: 250px;
+        }
+
+        #arvore {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #rodape {
+            height: 145px;
+            padding: 20px 0 30px 20px;
+            margin-top: -15px;
+            color: white;
+            background-color: rgb(100, 3, 3);
+        }
+
+        p {
+            font-size: 1.4em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divbody">
+        <div id="sol">
+            <marquee behavior="scroll" direction="left" scrollamount="2">
+                <img src="sol.png" alt="Sol" height="200px">
+            </marquee>
+        </div>
+        <div class="nuvem">
+            <marquee behavior="scroll" direction="left" scrollamount="3">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="nuvem.png" alt="Sol" height="60px">
+                <img src="avi.png" alt="aviaoJATO" height="70px">
+            </marquee>
+        </div>
+        <div class="nuvem">
+            <marquee behavior="scroll" direction="left" scrollamount="5">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="turbohelice.png" alt="aviaoTBHEL" height="60px">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="nuvem.png" alt="Sol" height="60px">
+                <img src="nuvem.png" alt="Sol" height="65px">
+
+            </marquee>
+        </div>
+        <div class="nuvem">
+            <marquee behavior="scroll" direction="left" scrollamount="7">
+
+                <img src="helice.png" alt="aviaoHel" height="60px">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="nuvem.png" alt="Sol" height="65px">
+                <img src="nuvem.png" alt="Sol" height="50px">
+                <img src="nuvem.png" alt="Sol" height="30px">
+            </marquee>
+        </div>
+        <div class="nuvem">
+            <marquee behavior="scroll" direction="left" scrollamount="4">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="nuvem.png" alt="Sol" height="55px">
+                <img src="nuvem.png" alt="Sol" height="40px">
+                <img src="nuvem.png" alt="Sol" height="70px">
+                <img src="nuvem.png" alt="Sol" height="60px">
+                <img src="nuvem.png" alt="Sol" height="50px">
+            </marquee>
+        </div>
+        <div id="arvore">
+            <img src="arvore.png" alt="a" height="350">
+            <img src="arvore.png" alt="b" height="250">
+            <img src="arvore.png" alt="c" height="270">
+            <img src="arvore.png" alt="d" height="350">
+            <img src="arvore.png" alt="e" height="250">
+            <img src="arvore.png" alt="f" height="100">
+            <img src="arvore.png" alt="g" height="160">
+            <img src="arvore.png" alt="h" height="240">
+            <img src="arvore.png" alt="i" height="290">
+            <img src="arvore.png" alt="j" height="200">
+        </div>
+
+        <div id="rodape">
+            <p>
+                Daniel Almeida <br>
+                05/04/2023
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

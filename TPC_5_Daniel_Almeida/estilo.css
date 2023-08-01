@@ -1,0 +1,156 @@
+/* Trabalho 5: Daniel Almeida */
+body {
+    text-align: center;
+    color: white;
+    background-color: black;
+    font-family: 'Courier New';
+    /* overflow-x: hidden; */
+}
+
+header {
+    background-color: green;
+    margin: -25px;
+    margin-bottom: 0;
+    padding: 20px;
+}
+
+nav {
+    border: 3px solid white;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: auto;
+    padding: 15px;
+}
+
+nav a {
+    padding: 25px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: yellow;
+    font-weight: bold;
+    transition-duration: 0.5s;
+}
+
+footer {
+    background-color: green;
+    padding: 5px;
+    margin: 10px -25px -10px -25px;
+}
+
+main {
+    margin:50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+}
+
+.capa {
+    background-color: rgba(0, 255, 0, 0.25);
+    border: 3px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    max-width: 300px;
+    min-width: 250px;
+    height: 680px;
+    font-family: 'Lucida Sans';
+    text-decoration: none;
+    overflow: auto;
+}
+
+/* Para ecras pequenos: <950px */
+@media all and (max-width:950px) {
+    main .capa {
+        background-color: rgba(255, 0, 0, 0.25);
+        border-color: rgb(255, 0, 0);
+        transition-duration: 0.75s;
+    }
+}
+
+main>a>.produto>img {
+    width: 100%;
+    height: 400px;
+}
+
+main>a:visited {
+    color: white;
+}
+
+main>a {
+    color: white;
+}
+
+main>a:hover {
+    background-color: rgba(255, 255, 0, 0.75);
+    border-color: rgb(255, 255, 0);
+    transition-duration: 0.75s;
+}
+
+.capa h3 {
+    text-transform: uppercase;
+}
+
+.capa p, .destaque p {
+    text-align: justify;
+    padding: 10px;
+}
+
+.destaque {
+    width: 60%;
+    font-family: 'Lucida Sans';
+    margin-bottom: 40px;
+}
+
+.destaque img {
+    border: 3px solid rgb(0, 255, 0);
+    border-radius: 10px;
+    min-width: 300px;
+    height: 720px;
+}
+
+.destaque h3 {
+    font-size: 2em;
+    font-style: bold;
+    text-transform: capitalize;
+}
+
+.destaque a button {
+    background-color: darkgreen;
+    color: white;
+    width: 100px;
+    height: 50px;
+    font-size: 1.5em;
+    border: 3px solid green;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.destaque a button:hover {
+    background-color: rgba(255, 255, 0, 0.7);
+    border: 3px solid rgb(255, 200, 0);
+    transition-duration: 0.75s;
+}
+
+.destaque .da {
+    font-size: larger;
+    font-family: 'Lucida Sans';
+    margin-bottom: 40px;
+}
+
+.destaque .da img {
+    min-width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    border: 30px solid white;
+    filter: grayscale(100%);
+}
+
+.da a {
+    text-decoration: overline;
+    color: wheat;
+}

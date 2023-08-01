@@ -1,0 +1,217 @@
+/* TPC 6: Daniel Almeida */
+* {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* Display com 1000*825px. */
+    min-width: 1000px;
+    min-height: 825px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: rgb(60, 64, 67);
+}
+
+/* Header: links à Direita */
+header {
+    padding-top: 10px;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.topo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+a{    
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 15px;
+}
+
+.linktxt a {
+    color: rgba(0, 0, 0, .87);
+    font-size: 13px;
+}
+
+.linksimg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px;
+}
+
+.aps, .usr {
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.usr {
+    background-image: linear-gradient(30deg, rgba(255, 0, 0, 66%), rgba(255, 166, 0, 66%), rgba(0, 128, 0, 66%), rgba(0, 0, 255, 66%));
+}
+
+.usr a, .aps a{
+    padding-left: 0;
+}
+
+#apps {
+    width: 16px;
+    height: 16px;
+    padding: 8px;
+    vertical-align: middle;
+}
+
+#user {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+
+/* Main: logo, textarea, butões e informação */
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 300px;
+    height: 100px;
+    padding-bottom: 20px;
+}
+
+/* Caixa de pesquisa */
+
+.cxtxt {
+    border: 1px solid rgb(223, 225, 229);
+    border-radius: 25px;
+    margin: auto;
+    width: auto;
+    min-width: 555px;
+    padding: 6px 10px 6px 0px;
+    height: 34px;
+}
+
+.cxtxt #txta {
+    border: none;
+    outline: none;
+    resize: none;
+    vertical-align: middle;
+    height: 22px;
+    text-align: left;
+    padding: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+#lupa, #tec, #mic {
+    width: 20px;
+    vertical-align: middle;
+    padding: 6px;
+}
+
+.btpesquisa {
+    padding-top: 20px;
+}
+
+.btpesquisa button {
+    cursor: pointer;
+    padding: 0 16px;
+    background-color: rgb(248 249 250);
+    border: 1px solid rgb(248 249 250);
+    color: rgb(60, 64, 67);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin: 12px 0px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+/* Informação google: English */
+.txtsimples {
+    margin-top: 30px;
+}
+
+.txtsimples a {
+    color: blue;
+    padding-left: 6px;
+}
+
+/* Rodapé */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(242, 242, 242);
+    color: rgb(112, 117, 122);
+}
+
+footer a {
+    color: rgb(112, 117, 122);
+    padding: 15px;
+}
+
+.local {
+    padding: 15px 30px;
+    border-bottom: 1px solid rgb(218, 220, 224);
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.linkimg {
+    padding: 15px;
+}
+
+.linkimg img {
+    width: 12px;
+    height: 14px;
+}
+
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+/* HOVER */
+a:hover {
+    text-decoration: underline;
+}
+
+.aps:hover {
+    background-color: rgba(60, 64, 67, .08);
+}
+
+.usr:hover {
+    background-image: linear-gradient(35deg, rgba(255, 0, 0, 100%), rgba(0, 255, 0, 100%));
+}
+.usr:hover #user{
+    width: 25px;
+    height: 25px;
+}
+
+.btpesquisa button:hover {
+    color: rgb(32, 33, 36);
+    border: 1px solid rgb(218, 220, 224);
+    box-shadow: 1px 1px 0 rgba(0, 0, 0, .1);
+}
