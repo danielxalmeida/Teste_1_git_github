@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #233eff;
+    color: aliceblue;
+}
+header{
+    background-color: aquamarine;
+    color: red;
+}
+h1{
+    text-shadow: 2px 2px 1px red;
+}
+
+@media print {
+    *{
+        margin: 10px;
+        padding: 10px;
+    
+    }
+    body{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    
+    }
+    body{
+        background-image: url(../imagens/back-print.jpg);
+    }
+    nav{
+        display: none;
+    }
+    article::after{
+        content: 'Teste de impressora....'
+    }
+    /* #tel,#tab,#pcc,#tvv{
+        display: block;
+    } */
+    #tll {display: none;}
+    #tab {display: none;}
+    #pri {display: block;}
+    #pcc {display: none;}
+    #tvv {display: none;}
+
+}
+
+@media screen and (max-width: 600px) {
+    
+    #tll {display: none;}
+    #tab {display: none;}
+    #pri {display: none;}
+    #pcc {display: none;}
+    #tvv {display: none;}
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    body{
+        background-image: url(../imagens/back-phone.jpg);
+    }
+    #tll {display: block;}
+    #tab {display: none;}
+    #pri {display: none;}
+    #pcc {display: none;}
+    #tvv {display: none;}
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+    }
+    #tll {display: none;}
+    #tab {display: block; }
+    #pri {display: none;}
+    #pcc {display: none;}
+    #tvv {display: none;}
+}
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #tll {display: none;}
+    #tab {display: none; }
+    #pri {display: none;}
+    #pcc {display: block;}
+    #tvv {display: none;}
+}
+@media screen and (min-width: 1200px) {
+    body{
+    background-image: url(../imagens/back-tv.jpg);
+    }
+    #tll {display: none;}
+    #tab {display: none; }
+    #pri {display: none;}
+    #pcc {display: none;}
+    #tvv {display: block;}
+}
+
