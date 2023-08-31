@@ -1,2 +1,94 @@
 @charset "UTF-8";
 
+:root{
+    /* --cor1:rgb(34,70,108);
+    --cor2:rgb(214, 40, 40);
+    --cor3:rgb(242, 220, 93);
+    --cor4:rgb(242, 163, 89);
+    --cor5:rgb(107, 143, 113);
+    --cor6:rgb();
+    --color1: #5593e554;
+    --color2: #4084d269;
+    --color3: #2b73c042;
+    --color4: #1561ad60;
+    --color5: #00529a7a; 
+    --color6: rgb(197, 222, 216)
+    */
+    --color1: rgba(4, 35, 209, 0.151);
+    --color2: rgba(78, 77, 77, 0.041);
+    --color3: rgba(66, 131, 117, 0.192);
+    --color6: rgb(197, 222, 216);
+
+}
+.nav-link{
+    text-decoration: none;
+    color: black;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.nav-item{
+    border: 2px solid rgba(128, 128, 128, 0.473);
+    padding: 0 5px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    transition-duration: 0.4s;
+}
+.left{
+    border-radius: 10px 0 0 10px;
+}
+.right{
+    border-radius: 0 10px 10px 0;
+}
+.nav-item:hover{
+    background-color: var(--color6);
+}
+/* .bg-base{
+    background-color: var(--color1);
+    
+} */
+.card{
+    background-color: var(--color2);
+    /* border:2px solid grey; */
+}
+.bg-titulo{
+    background-image: linear-gradient(to bottom, var(--color3), var(--color2));
+    border-bottom:1px solid rgba(128, 128, 128, 0.089);
+}
+
+.bg-foto{
+    background-color: var(--color3);
+    
+}
+.bg-cara{
+    background-color: var(--color3);
+}
+.bg-lingua{
+    background-color: var(--color3);
+}
+.bg-linguagem{
+    background-color: var(--color3);
+}
+.bg-pro{
+    background-color: var(--color2);
+}
+.bg-aca{
+    background-color: var(--color2);
+}
+.bg-personalizado{
+    background-color: rgb(63, 97, 89);
+}
+.bg-daca{
+    background-color: rgba(27, 27, 27, 0.253);
+}
+
+
+/*
+34,70,108
+214, 40, 40
+242, 220, 93
+242, 163, 89
+107, 143, 113 
+*/
+
